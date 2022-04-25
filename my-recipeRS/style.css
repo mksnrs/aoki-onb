@@ -1,0 +1,224 @@
+html {
+  font-size: 62.5%;
+}
+
+/*  body  */
+
+body {
+  color: #333333;
+  font-family: -apple-system , BlinkMacSystemFont , 'Helvetica Neue' , '游ゴシック' , 'Yu Gothic' , '游ゴシック体' , YuGothic , Verdana , 'メイリオ' , Meiryo , sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+/*  header  */
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 30px 0 20px;
+}
+
+header img {
+  width: 100%;
+}
+
+/*  nav  */
+
+.nav {
+  background: #ffffff;
+  letter-spacing: 4px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.nav li {
+  float: left;
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 5px 0;
+  width: calc(100%/3);
+}
+
+.nav li:hover {
+  background-color: #ffd728;
+}
+
+.nav li:hover a {
+  color: #ffffff;
+}
+
+/*  article  */
+
+article {
+  padding: 0 5% 20px;
+  width: 90%;
+}
+
+article h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+article p img {
+  height: auto;
+  width: 100%;
+}
+
+/*  section  */
+
+section h3 {
+  font-size: 2.0rem;
+}
+
+section ul li,
+section ol li {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/*  aside  */
+
+aside {
+  background: #ffd728;
+}
+
+aside section {
+  padding: 20px 5%;
+}
+
+aside section h3 {
+  padding: 0 8%;
+}
+
+/*  footer  */
+
+footer {
+  border-top: solid 3px #dddddd;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+
+/*  nav  */
+
+  .nav li a {
+    font-size: 1.6rem;
+  }
+
+/*  article  */
+
+  article p img {
+    max-width: 400px;
+  }
+
+  article h2 {
+    font-size: 2.2rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+/*  header  */
+
+  header h1 {
+    font-size: 3.6rem;
+    padding: 70px 0 40px;
+  }
+
+  header p {
+    margin: 0;
+    padding: 20px 0 0;
+  }
+
+  header img {
+    vertical-align: bottom;
+  }
+
+/*  nav  */
+
+  .nav {
+    max-width: 760px;
+  }
+
+  .nav li {
+    margin: 0 0 20px;
+    padding: 20px 0;
+  }
+
+  .nav li a {
+    font-size: 1.8rem;
+  }
+
+/*  contents  */
+
+  #contents {
+    display: flex;
+    margin: 0 auto;
+  }
+
+/*  article  */
+
+  article {
+    padding: 40px 5% 20px;
+    width: 62%;
+  }
+
+/*  aside  */
+
+  aside {
+    height: auto;
+    width: 38%;
+  }
+
+  aside section {
+    padding: 50px 5% 20px;
+  }
+
+}
+
+@media (min-width: 960px) {
+
+/*  header  */
+
+  header {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+/*  contents  */
+
+  #contents {
+    max-width: 1280px;
+  }
+
+/*  article  */
+
+  article {
+    padding: 40px 5% 20px;
+    width: calc(100%/3*2);
+  }
+
+/*  aside  */
+
+  aside {
+    width: calc(100%/3);
+  }
+
+}
